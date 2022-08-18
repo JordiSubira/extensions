@@ -1,0 +1,69 @@
+<<<<<<< Updated upstream
+{
+  "name": "SCION Browser Extension",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "proxy",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "https://*/*",
+    "http://localhost/*"
+  ],
+  "omnibox": { "keyword" : "scion" },
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["shared/storage.js", "background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "SCION Browser extension",
+    "default_icon": {
+      "16": "/images/scion-38.jpg",
+      "24": "/images/scion-38.jpg",
+      "32": "/images/scion-38.jpg"
+    }
+  },
+  "icons": {
+    "16": "/images/scion-0.png",
+    "32": "/images/scion-1.png",
+    "48": "/images/scion-2.png",
+    "128": "/images/scion-3.png"
+  },
+  "manifest_version": 2
+}
+=======
+{
+  "manifest_version": 2,
+  "name": "WASM Sample",
+  "version": "0.1",
+  "description": "A basic Chrome extension using a simple WASM file.",
+  "icons": { "128": "icon_128.png" },
+    "background": {
+    "persistent": false,
+    "scripts": ["main.js"]
+  },
+  "permissions": [
+    "http://*/", "https://*/"
+    ],
+  "web_accessible_resources": [
+        "content_script.js",
+        "main.js",
+        "main.wasm",
+        "simple.wasm"
+   ],
+   "content_security_policy": "script-src 'self' 'wasm-eval'; object-src 'self'",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "WASM extension",
+    "default_icon":  {
+    "19": "icon_19.png"
+    }
+  }
+
+}
+>>>>>>> Stashed changes
